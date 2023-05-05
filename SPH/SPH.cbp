@@ -27,7 +27,9 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="start.cpp" />
+		<Unit filename="Kelvin-Helmholtz Instability.cpp" />
+		<Unit filename="Rayleigh-Taylor Instability.cpp" />
+		<Unit filename="SPH library/Classes&amp;Structures/particle.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
