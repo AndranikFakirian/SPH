@@ -29,7 +29,12 @@
 		</Compiler>
 		<Unit filename="Kelvin-Helmholtz Instability.cpp" />
 		<Unit filename="Rayleigh-Taylor Instability.cpp" />
+		<Unit filename="SPH library/Classes&amp;Structures/Liquid.hpp" />
+		<Unit filename="SPH library/Classes&amp;Structures/Particles.hpp" />
 		<Unit filename="SPH library/Classes&amp;Structures/particle.cpp" />
+		<Unit filename="SPH library/Constructor/Additional functions/randomizer.cpp" />
+		<Unit filename="SPH library/Solver/Additional functions/distancefunc.cpp" />
+		<Unit filename="SPH library/Solver/kerfunc.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
