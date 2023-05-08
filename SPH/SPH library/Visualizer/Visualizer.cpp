@@ -5,13 +5,30 @@
 
 void Liquid::Visualize()
 {
-    const int WX=1938;
-    const int WY=1156;
+    const double WX=1938;
+    const double WY=1156;
+    const double p_length=77;
+    const double p_heigth=100;
+    const double heigth=950.0;
+    const double indent=50.0;
+    const double width=3.0;
+    const double length=p_length*(rad*2+1)+1;
     const double rad=4.0;
     sf::ContextSettings settings;
     settings.antialiasingLevel = 8;
     sf::RenderWindow window(sf::VideoMode(WX, WY), "SPH", sf::Style::Fullscreen, settings);
     window.setFramerateLimit(60);
+    sf::RectangleShape bg(sf::Vector2f(WX, WY));
+    bg.setPosition(0, 0);
+    sf::RectangleShape wall1(sf::Vector2f(width, heigth));
+    wall1.setPosition((WX-length)/2-width, indent);
+    wall1.setFillColor(sf::Color::Black);
+    sf::RectangleShape wall2(sf::Vector2f(width, heigth));
+    wall2.setPosition((WX+length)/2, indent);
+    wall2.setFillColor(sf::Color::Black);
+    sf::RectangleShape bottom(sf::Vector2f(length+2*width, width));
+    bottom.setPosition((WX-length)/2-width, heigth+indent);
+    bottom.setFillColor(sf::Color::Black);
     vector <sf::CircleShape> fluid;
     fluid.resize(liq.size());
     for (unsigned i=0; i<liq.size(); i++)
@@ -42,6 +59,10 @@ void Liquid::Visualize()
             //Algorithm can be done in two ways: through setPosition and move
 
             window.clear();
+            window.draw(bg);
+            window.draw(wall1);
+            window.draw(wall2);
+            window.draw(bottom);
             for (vector <sf::CircleShape>::iterator it=fluid.begin(); it!=fluid.end(); ++it)
             {
                 window.draw((*it));
