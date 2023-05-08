@@ -9,4 +9,7 @@ public:
     Liquid (vector <Particles> P);
     double Ker (particle p1, particle p2, double h); //Kernel function
     double DerKer (particle p1, particle p2, double h); //Derivative of Kernel function
+    void Solve();
+    void Starting();
+    void Visualize(); //Vizualizer
 };

@@ -35,6 +35,7 @@
 		<Unit filename="SPH library/Constructor/Additional functions/randomizer.cpp" />
 		<Unit filename="SPH library/Solver/Additional functions/distancefunc.cpp" />
 		<Unit filename="SPH library/Solver/kerfunc.cpp" />
+		<Unit filename="SPH library/Visualizer/Visualizer.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
