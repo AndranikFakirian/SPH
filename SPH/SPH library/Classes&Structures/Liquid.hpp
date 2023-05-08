@@ -12,4 +12,8 @@ public:
     void Solve();
     void Starting();
     void Visualize(); //Vizualizer
+    double dro(unsigned int ind);
+    double dE(unsigned int ind);
+    double dVx(unsigned int ind);
+    double dVy(unsigned int ind);
 };
