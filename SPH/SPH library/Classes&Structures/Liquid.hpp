@@ -16,4 +16,5 @@ public:
     double dE(unsigned int ind);
     double dVx(unsigned int ind);
     double dVy(unsigned int ind);
+    double ro(unsigned int ind)
 };
