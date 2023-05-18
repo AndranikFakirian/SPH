@@ -3,5 +3,5 @@
 struct particle
 {
     std::string color;
-    double x, y, vx, vy, dvx, dvy, ro, dro, p, m, Wk;
+    double x, y, vx, vy, dvx, dvy, ro0, ro, dro, p, m, Wk;
 };

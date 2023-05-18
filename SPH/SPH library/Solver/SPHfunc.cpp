@@ -51,9 +51,9 @@ double Liquid::dVy(unsigned int ind)
     }
     return val;
 }
-double Liquid::ro(unsigned int ind)
+double ro(vector <particle> liq, unsigned int ind, double h) //Speed - O(n)
 {
-    double val;
+    double val=0;
     for (unsigned int i=0; i<liq.size(); i++)
     {
         val+=(liq[i].m*ker(liq[ind],liq[i], h));

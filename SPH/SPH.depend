@@ -411,11 +411,15 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1683057703 source:c:\users\andra\desktop\Информатика\project\sph\sph\sph\kelvin-helmholtz instability.cpp
+1683283540 source:c:\users\andra\desktop\Информатика\project\sph\sph\sph\kelvin-helmholtz instability.cpp
 	<SFML/Graphics.hpp>
 
 1683099253 source:c:\users\andra\desktop\Информатика\project\sph\sph\sph\rayleigh-taylor instability.cpp
 
-1683280140 source:c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\classes&structures\particle.cpp
+1683570580 source:c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\classes&structures\particle.cpp
 	<iostream>
+
+1683283161 source:c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\constructor\additional functions\randomizer.cpp
+	<stdlib.h>
+	<time.h>
 

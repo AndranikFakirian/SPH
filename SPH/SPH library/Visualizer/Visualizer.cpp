@@ -1,33 +1,25 @@
 #pragma once
 #include "../Classes&Structures/Liquid.hpp"
+#include "Environment Parameters.cpp"
 #include <SFML/Graphics.hpp>
 #include <iterator>
 
 void Liquid::Visualize()
 {
-    const double WX=1938;
-    const double WY=1156;
-    const double p_length=77;
-    const double p_heigth=100;
-    const double heigth=950.0;
-    const double indent=50.0;
-    const double width=3.0;
-    const double length=p_length*(rad*2+1)+1;
-    const double rad=4.0;
     sf::ContextSettings settings;
     settings.antialiasingLevel = 8;
-    sf::RenderWindow window(sf::VideoMode(WX, WY), "SPH", sf::Style::Fullscreen, settings);
+    sf::RenderWindow window(sf::VideoMode(E_WX, E_WY), "SPH", sf::Style::Fullscreen, settings);
     window.setFramerateLimit(60);
-    sf::RectangleShape bg(sf::Vector2f(WX, WY));
+    sf::RectangleShape bg(sf::Vector2f(E_WX, E_WY));
     bg.setPosition(0, 0);
-    sf::RectangleShape wall1(sf::Vector2f(width, heigth));
-    wall1.setPosition((WX-length)/2-width, indent);
+    sf::RectangleShape wall1(sf::Vector2f(E_width, E_heigth));
+    wall1.setPosition((E_WX-E_length)/2-E_width, E_indent);
     wall1.setFillColor(sf::Color::Black);
-    sf::RectangleShape wall2(sf::Vector2f(width, heigth));
-    wall2.setPosition((WX+length)/2, indent);
+    sf::RectangleShape wall2(sf::Vector2f(E_width, E_heigth));
+    wall2.setPosition((E_WX+E_length)/2, E_indent);
     wall2.setFillColor(sf::Color::Black);
-    sf::RectangleShape bottom(sf::Vector2f(length+2*width, width));
-    bottom.setPosition((WX-length)/2-width, heigth+indent);
+    sf::RectangleShape bottom(sf::Vector2f(E_length+2*E_width, E_width));
+    bottom.setPosition((E_WX-E_length)/2-E_width, E_heigth+E_indent);
     bottom.setFillColor(sf::Color::Black);
     vector <sf::CircleShape> fluid;
     fluid.resize(liq.size());
@@ -41,8 +33,8 @@ void Liquid::Visualize()
         if (liq[i].color=="green")
             c=sf::Color::Green;
         fluid[i].setFillColor(c);
-        fluid[i].setRadius(rad);
-        fluid[i].setOrigin(rad, rad);
+        fluid[i].setRadius(E_rad);
+        fluid[i].setOrigin(E_rad, E_rad);
         fluid[i].setPosition(liq[i].x, liq[i].y);
     }
     Starting();

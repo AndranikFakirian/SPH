@@ -1,16 +1,26 @@
 #pragma once
 #include "../Classes&Structures/Liquid.hpp"
 
-void Liquid::fillDK()
+void Liquid::fillDK() //Speed - O(n^2), memory - O(n)
 {
-    vector<particle>::iterator it;
-    int i=0;
-    for (it=liq.begin(); it!=liq.end(); ++it)
+    long i=0;
+    DK.resize(liq.size());
+    for (vector <particle>::iterator it=liq.begin(); it!=liq.end(); ++it)
     {
-        vector<particle>::iterator it1;
-        for (it1=liq.begin(); it1!=liq.end(); ++it1)
+        DK[i].resize(liq.size());
+        long j=0;
+        for (vector <particle>::iterator it1=liq.begin(); it1!=liq.end(); ++it1)
         {
-            DK[i].pushback(DerKer(it, it1, h))
+            double dk=DerKer((*it), (*it1), h);
+            if (dk!=0)
+            {
+                ppair p;
+                p.pparticle=(*it1);
+                p.dk=dk;
+                DK[i][j]=p;
+                j++;
+            }
+            DK[i].resize(j);
         }
         i++;
     }

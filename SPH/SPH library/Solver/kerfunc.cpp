@@ -1,11 +1,11 @@
-#include <cmath>
 #pragma once
+#include <cmath>
 double ker(particle p1, particle p2, double h)
 {
     double r=dist(p1, p2);
     double e=r/h;
     double k=0.7*M_PI*h*h;
-    if (e>=2)
+    if ((e>=2)||(e==0))
     {
         return 0;
     }
@@ -23,7 +23,7 @@ double dker(particle p1, particle p2, double h)
     double r=dist(p1, p2);
     double e=r/h;
     double k=2.8*M_PI*h*h*h;
-    if (e>=2)
+    if ((e>=2)||(e==0))
     {
         return 0;
     }

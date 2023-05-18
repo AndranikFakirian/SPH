@@ -1,10 +1,12 @@
 #pragma once
 #include "Particles.hpp"
+#include "ppair.cpp"
 class Liquid
 {
 private:
     vector <particle> liq;
-    vector <vector <double>> DK;
+    vector <vector<ppair>> DK;
+    double h;
 public:
     Liquid (vector <Particles> P);
     double Ker (particle p1, particle p2, double h); //Kernel function
@@ -16,5 +18,4 @@ public:
     double dE(unsigned int ind);
     double dVx(unsigned int ind);
     double dVy(unsigned int ind);
-    double ro(unsigned int ind)
 };
