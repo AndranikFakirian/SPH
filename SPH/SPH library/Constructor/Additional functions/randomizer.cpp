@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-int randomize(int max, int min)
+int randomize(int max, int min) //Returns value [min; max]^Z
 {
     srand(time(NULL));
     return min+rand()%(max-min+1);
