@@ -10,7 +10,7 @@ void Liquid::fillDK() //Speed - O(n^2), memory - O(n)
     {
         DK[i].resize(liq.size());
         long j=0;
-        for (const auto &it1 : liq))
+        for (const auto &it1 : liq)
         {
             double dk=DerKer(it, it1, h);
             if (dk!=0)

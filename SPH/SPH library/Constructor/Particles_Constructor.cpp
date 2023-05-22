@@ -4,8 +4,9 @@
 #include "../Visualizer/Environment_Parameters.cpp"
 #include "../Solver/SPHfunc.cpp"
 #include <cmath>
-Particles::Particles(string c, double vx, double vy, double m, long int Num, double h): h(h) //Speed - O(N), memory - O(N)
+Particles::Particles(std::string c, double vx, double vy, double m, long int Num, double h) //Speed - O(N), memory - O(N)
 {
+    this->h=h;
     long tempNum=N+Num;
     long tNum=0;
     if (tempNum>E_p_heigth*E_p_length)
@@ -59,7 +60,7 @@ Particles::Particles(string c, double vx, double vy, double m, long int Num, dou
         p[i].vy+=p[i].vy/10*fluc;
     }
 }
-Particles (string c, double vx, double vy, double m, long int Num) //Asymptotics are analogic
+Particles::Particles (std::string c, double vx, double vy, double m, long int Num) //Asymptotics are analogic
 {
     Particles(c, vx, vy, m, Num, this->h);
 }

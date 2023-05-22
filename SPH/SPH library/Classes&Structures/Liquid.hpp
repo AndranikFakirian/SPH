@@ -1,18 +1,22 @@
 #pragma once
 #include "Particles.hpp"
 #include "ppair.cpp"
-class Liquid: public Particles
+#include <SFML/Graphics.hpp>
+class Liquid
 {
 private:
-    vector <particle> liq; //Vector of particles
-    vector <vector<ppair>> DK; //Table of derivatives of the kernel function for each pair of particles in the distance range (0; h)
+    std::vector <particle> liq; //Vector of particles
+    std::vector <std::vector<ppair>> DK; //Table of derivatives of the kernel function for each pair of particles in the distance range (0; h)
+    double h;
     double alpha; //Pulse reduction coefficient after reflection from the walls and bottom
     double k; //Pressure coefficient
     double g; //Acceleration of free fall
     double dt; //Time change
+    sf::ContextSettings settings;
 public:
-    Liquid (vector <Particles>& P, double alpha, double k, double g, double dt);
+    Liquid (std::vector <Particles>& P, double alpha, double k, double g, double dt);
     double DerKer (particle p1, particle p2, double h); //Derivative of Kernel function
+    void fillDK();
     void Solve(); //Computing of movement
     void Starting(); //Computing of some initial values
     void Visualize(); //Visualizer

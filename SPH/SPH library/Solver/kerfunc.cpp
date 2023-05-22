@@ -1,7 +1,8 @@
 #pragma once
 #include <cmath>
 #include "../Classes&Structures/Liquid.hpp"
-double Particles::Ker(particle p1, particle p2, double h)
+#include "Additional functions/distancefunc.cpp"
+double Ker(particle p1, particle p2, double h)  //Kernel function
 {
     double r=dist(p1, p2);
     double e=r/h;

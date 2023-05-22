@@ -1,8 +1,8 @@
 #pragma once
-#include "../Classes&Structures/Liquid.hpp"
 #include "Environment_Parameters.cpp"
-#include <SFML/Graphics.hpp>
 #include <iterator>
+#include "../Solver/Solver.cpp"
+#include "../Solver/Starting.cpp"
 
 void Liquid::Visualize()
 {
@@ -20,18 +20,8 @@ void Liquid::Visualize()
     wall2.setFillColor(sf::Color::Black);
     sf::RectangleShape bottom(sf::Vector2f(E_length+2*E_width, E_width));
     bottom.setPosition((E_WX-E_length)/2-E_width, E_height+E_indent);
-    sf::RectangleShape bg(sf::Vector2f(E_WX, E_WY));
-    bg.setPosition(0, 0);
-    sf::RectangleShape wall1(sf::Vector2f(E_width, E_height));
-    wall1.setPosition((E_WX-E_length)/2-E_width, E_indent);
-    wall1.setFillColor(sf::Color::Black);
-    sf::RectangleShape wall2(sf::Vector2f(E_width, E_height));
-    wall2.setPosition((E_WX+E_length)/2, E_indent);
-    wall2.setFillColor(sf::Color::Black);
-    sf::RectangleShape bottom(sf::Vector2f(E_length+2*E_width, E_width));
-    bottom.setPosition((E_WX-E_length)/2-E_width, E_height+E_indent);
     bottom.setFillColor(sf::Color::Black);
-    vector <sf::CircleShape> fluid;
+    std::vector <sf::CircleShape> fluid;
     fluid.resize(liq.size());
     for (unsigned i=0; i<liq.size(); i++)
     {
@@ -68,10 +58,11 @@ void Liquid::Visualize()
             window.draw(wall1);
             window.draw(wall2);
             window.draw(bottom);
-            for (vector <sf::CircleShape>::iterator it=fluid.begin(); it!=fluid.end(); ++it)
+            for (std::vector <sf::CircleShape>::iterator it=fluid.begin(); it!=fluid.end(); ++it)
             {
                 window.draw((*it));
             }
             window.display();
+        }
     }
 }

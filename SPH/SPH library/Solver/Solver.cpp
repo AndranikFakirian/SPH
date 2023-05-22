@@ -1,10 +1,11 @@
 #pragma once
-#include "../Classes&Structures/Liquid.hpp"
 #include "Additional functions/reflector.cpp"
 #include "SPHfunc.cpp"
+#include "Liquid.cpp"
 
 void Liquid::Solve() //Speed - O(N)
 {
+    fillDK();
     for (unsigned i=0; i<liq.size(); i++)
     {
         liq[i].dro=derRo(i)*dt;

@@ -1,24 +1,13 @@
-#include <SFML/Graphics.hpp>
+#pragma once
+#include "SPH library/allincluded.cpp"
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(2000, 200), "SFML works!");
-    sf::CircleShape shape(100.f);
-    shape.setFillColor(sf::Color::Green);
-
-    while (window.isOpen())
-    {
-        sf::Event event;
-        while (window.pollEvent(event))
-        {
-            if (event.type == sf::Event::Closed)
-                window.close();
-        }
-
-        window.clear();
-        window.draw(shape);
-        window.display();
-    }
+    Particles p1("blue", 1, 1, 1, 3150, 10);
+    Particles p2("red", 1, 1, 1, 3150);
+    std::vector <Particles> P={p1, p2};
+    Liquid L(P, 1, 1, 1, 0.00001);
+    L.Visualize();
 
     return 0;
 }

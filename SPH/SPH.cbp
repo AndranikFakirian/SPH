@@ -29,6 +29,7 @@
 		</Compiler>
 		<Unit filename="Kelvin-Helmholtz Instability.cpp" />
 		<Unit filename="Rayleigh-Taylor Instability.cpp" />
+		<Unit filename="SPH library/Classes&amp;Structures/Additional functions/getParticles.cpp" />
 		<Unit filename="SPH library/Classes&amp;Structures/Liquid.hpp" />
 		<Unit filename="SPH library/Classes&amp;Structures/Particles.hpp" />
 		<Unit filename="SPH library/Classes&amp;Structures/particle.cpp" />
@@ -37,12 +38,16 @@
 		<Unit filename="SPH library/Constructor/Liquid_Constructor.cpp" />
 		<Unit filename="SPH library/Constructor/Particles_Constructor.cpp" />
 		<Unit filename="SPH library/Solver/Additional functions/distancefunc.cpp" />
+		<Unit filename="SPH library/Solver/Additional functions/reflector.cpp" />
 		<Unit filename="SPH library/Solver/Additional functions/scalar.cpp" />
 		<Unit filename="SPH library/Solver/Liquid.cpp" />
 		<Unit filename="SPH library/Solver/SPHfunc.cpp" />
+		<Unit filename="SPH library/Solver/Solver.cpp" />
+		<Unit filename="SPH library/Solver/Starting.cpp" />
 		<Unit filename="SPH library/Solver/kerfunc.cpp" />
 		<Unit filename="SPH library/Visualizer/Environment_Parameters.cpp" />
 		<Unit filename="SPH library/Visualizer/Visualizer.cpp" />
+		<Unit filename="SPH library/allincluded.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

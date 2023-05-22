@@ -411,15 +411,167 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1683283540 source:c:\users\andra\desktop\Информатика\project\sph\sph\sph\kelvin-helmholtz instability.cpp
-	<SFML/Graphics.hpp>
+1684780044 source:c:\users\andra\desktop\Информатика\project\sph\sph\sph\kelvin-helmholtz instability.cpp
+	"SPH library/allincluded.cpp"
 
 1683099253 source:c:\users\andra\desktop\Информатика\project\sph\sph\sph\rayleigh-taylor instability.cpp
 
-1683570580 source:c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\classes&structures\particle.cpp
+1684419414 source:c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\classes&structures\particle.cpp
 	<iostream>
 
-1683283161 source:c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\constructor\additional functions\randomizer.cpp
+1684687513 source:c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\constructor\additional functions\randomizer.cpp
 	<stdlib.h>
 	<time.h>
+
+1684421158 source:c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\classes&structures\ppair.cpp
+	"particle.cpp"
+
+1684419414 c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\classes&structures\particle.cpp
+	<iostream>
+
+1684779941 source:c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\solver\additional functions\scalar.cpp
+
+1684775457 source:c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\solver\additional functions\distancefunc.cpp
+	"../../Classes&Structures/particle.cpp"
+	<cmath>
+
+1684688454 source:c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\visualizer\environment_parameters.cpp
+
+1684769405 source:c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\solver\additional functions\reflector.cpp
+	"../../Classes&Structures/Liquid.hpp"
+	"../../Visualizer/Environment_Parameters.cpp"
+
+1684779285 c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\classes&structures\liquid.hpp
+	"Particles.hpp"
+	"ppair.cpp"
+	<SFML/Graphics.hpp>
+
+1684778292 c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\classes&structures\particles.hpp
+	"particle.cpp"
+	<vector>
+
+1684421158 c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\classes&structures\ppair.cpp
+	"particle.cpp"
+
+1684688454 c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\visualizer\environment_parameters.cpp
+
+1684775716 source:c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\classes&structures\additional functions\getparticles.cpp
+	"../Particles.hpp"
+
+1684778226 source:c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\solver\kerfunc.cpp
+	<cmath>
+	"../Classes&Structures/Liquid.hpp"
+	"Additional functions/distancefunc.cpp"
+
+1684775457 c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\solver\additional functions\distancefunc.cpp
+	"../../Classes&Structures/particle.cpp"
+	<cmath>
+
+1684776120 source:c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\solver\liquid.cpp
+	"../Classes&Structures/Liquid.hpp"
+	"kerfunc.cpp"
+
+1684778226 c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\solver\kerfunc.cpp
+	<cmath>
+	"../Classes&Structures/Liquid.hpp"
+	"Additional functions/distancefunc.cpp"
+
+1684775339 source:c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\solver\solver.cpp
+	"../Classes&Structures/Liquid.hpp"
+	"Additional functions/reflector.cpp"
+	"SPHfunc.cpp"
+	"Liquid.cpp"
+
+1684769405 c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\solver\additional functions\reflector.cpp
+	"../../Classes&Structures/Liquid.hpp"
+	"../../Visualizer/Environment_Parameters.cpp"
+
+1684778285 c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\solver\sphfunc.cpp
+	"../Classes&Structures/Liquid.hpp"
+	"Liquid.cpp"
+	"Additional functions/scalar.cpp"
+	<cmath>
+	<iterator>
+
+1684776120 c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\solver\liquid.cpp
+	"../Classes&Structures/Liquid.hpp"
+	"kerfunc.cpp"
+
+1684779941 c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\solver\additional functions\scalar.cpp
+
+1684778285 source:c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\solver\sphfunc.cpp
+	"../Classes&Structures/Liquid.hpp"
+	"Liquid.cpp"
+	"Additional functions/scalar.cpp"
+	<cmath>
+	<iterator>
+
+1684770970 source:c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\solver\starting.cpp
+	"../Classes&Structures/Liquid.hpp"
+	"SPHfunc.cpp"
+
+1684778319 source:c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\constructor\particles_constructor.cpp
+	"Additional functions/randomizer.cpp"
+	"../Classes&Structures/Particles.hpp"
+	"../Visualizer/Environment_Parameters.cpp"
+	"../Solver/SPHfunc.cpp"
+	<cmath>
+
+1684687513 c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\constructor\additional functions\randomizer.cpp
+	<stdlib.h>
+	<time.h>
+
+1684779275 source:c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\constructor\liquid_constructor.cpp
+	"../Classes&Structures/Liquid.hpp"
+	<iterator>
+	"../Visualizer/Environment_Parameters.cpp"
+	"../Classes&Structures/Additional functions/getParticles.cpp"
+
+1684775716 c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\classes&structures\additional functions\getparticles.cpp
+	"../Particles.hpp"
+
+1684779846 source:c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\allincluded.cpp
+	"Classes&Structures/Liquid.hpp"
+	"Constructor/Particles_Constructor.cpp"
+	"Constructor/Liquid_Constructor.cpp"
+	"Visualizer/Visualizer.cpp"
+
+1684778319 c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\constructor\particles_constructor.cpp
+	"Additional functions/randomizer.cpp"
+	"../Classes&Structures/Particles.hpp"
+	"../Visualizer/Environment_Parameters.cpp"
+	"../Solver/SPHfunc.cpp"
+	<cmath>
+
+1684779275 c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\constructor\liquid_constructor.cpp
+	"../Classes&Structures/Liquid.hpp"
+	<iterator>
+	"../Visualizer/Environment_Parameters.cpp"
+	"../Classes&Structures/Additional functions/getParticles.cpp"
+
+1684780780 c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\visualizer\visualizer.cpp
+	"Environment_Parameters.cpp"
+	<iterator>
+	"../Solver/Solver.cpp"
+	"../Solver/Starting.cpp"
+
+1684780719 c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\solver\solver.cpp
+	"Additional functions/reflector.cpp"
+	"SPHfunc.cpp"
+	"Liquid.cpp"
+
+1684780766 c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\solver\starting.cpp
+	"SPHfunc.cpp"
+
+1684779420 source:c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\visualizer\visualizer.cpp
+	"../Classes&Structures/Liquid.hpp"
+	"Environment_Parameters.cpp"
+	<iterator>
+	"../Solver/Solver.cpp"
+	"../Solver/Starting.cpp"
+
+1684780802 c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\allincluded.cpp
+	"Constructor/Particles_Constructor.cpp"
+	"Constructor/Liquid_Constructor.cpp"
+	"Visualizer/Visualizer.cpp"
 
