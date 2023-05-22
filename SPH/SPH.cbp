@@ -34,13 +34,14 @@
 		<Unit filename="SPH library/Classes&amp;Structures/particle.cpp" />
 		<Unit filename="SPH library/Classes&amp;Structures/ppair.cpp" />
 		<Unit filename="SPH library/Constructor/Additional functions/randomizer.cpp" />
-		<Unit filename="SPH library/Constructor/Constructor.cpp" />
+		<Unit filename="SPH library/Constructor/Liquid_Constructor.cpp" />
+		<Unit filename="SPH library/Constructor/Particles_Constructor.cpp" />
 		<Unit filename="SPH library/Solver/Additional functions/distancefunc.cpp" />
 		<Unit filename="SPH library/Solver/Additional functions/scalar.cpp" />
 		<Unit filename="SPH library/Solver/Liquid.cpp" />
 		<Unit filename="SPH library/Solver/SPHfunc.cpp" />
 		<Unit filename="SPH library/Solver/kerfunc.cpp" />
-		<Unit filename="SPH library/Visualizer/Environment Parameters.cpp" />
+		<Unit filename="SPH library/Visualizer/Environment_Parameters.cpp" />
 		<Unit filename="SPH library/Visualizer/Visualizer.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />

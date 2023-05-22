@@ -1,6 +1,7 @@
 #pragma once
 #include <cmath>
-double ker(particle p1, particle p2, double h)
+#include "../Classes&Structures/Liquid.hpp"
+double Particles::Ker(particle p1, particle p2, double h)
 {
     double r=dist(p1, p2);
     double e=r/h;
@@ -11,14 +12,14 @@ double ker(particle p1, particle p2, double h)
     }
     else if (e<=1)
     {
-        return pow(2-e,3)/(4*k);
+        return std::pow(2-e,3)/(4*k);
     }
     else if (e>0)
     {
-        return (1-1.5*e*e+0.75*e*e*e)/k;
+        return (1-1.5*std::pow(e, 2)+0.75*std::pow(e, 3))/k;
     }
 }
-double dker(particle p1, particle p2, double h)
+double Liquid::DerKer(particle p1, particle p2, double h)
 {
     double r=dist(p1, p2);
     double e=r/h;
@@ -29,10 +30,10 @@ double dker(particle p1, particle p2, double h)
     }
     else if (e<=1)
     {
-        return -3*pow(2-e,3)/k;
+        return -3*std::pow(2-e,3)/k;
     }
     else if (e>0)
     {
-        return (-12*e+9*e*e)/k;
+        return (-12*e+9*std::pow(e, 2))/k;
     }
 }

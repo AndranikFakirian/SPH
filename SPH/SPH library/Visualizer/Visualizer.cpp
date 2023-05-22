@@ -1,6 +1,6 @@
 #pragma once
 #include "../Classes&Structures/Liquid.hpp"
-#include "Environment Parameters.cpp"
+#include "Environment_Parameters.cpp"
 #include <SFML/Graphics.hpp>
 #include <iterator>
 
@@ -55,11 +55,14 @@ void Liquid::Visualize()
         {
             if (event.type == sf::Event::Closed)
                 window.close();
-            //Moving realization
-            //There's a refinement algorithm for movement (through partition of dtime)
-            //Here's a place for Solve function
-            //Algorithm can be done in two ways: through setPosition and move
-
+            for (int i=0; i<10; i++)
+            {
+                Solve();
+                for (unsigned j=0; j<liq.size(); j++)
+                {
+                    fluid[j].setPosition(liq[j].x, liq[j].y);
+                }
+            }
             window.clear();
             window.draw(bg);
             window.draw(wall1);

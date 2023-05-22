@@ -1,62 +1,59 @@
 #pragma once
-#include "../Classes&Structures/particle.cpp"
+#include "../Classes&Structures/Liquid.hpp"
 #include "Liquid.cpp"
 #include "Additional functions/scalar.cpp"
+#include <cmath>
+#include <iterator>
 
-double Liquid::dro(unsigned int ind)
+double Liquid::derRo(unsigned int ind) //Speed - O(1)
 {
     double val=0;
-    for (unsigned int i=0; i<liq.size(); i++)
+    for (vector <ppair>::iterator ppai=DK[ind].begin(); ppai!=DK[ind].end(); ++ppai)
     {
-        if (ind!=i)
-        {
-            val+=(liq[i].m*liq[ind].ro*DK[ind][i]/liq[i]*scalar(liq[ind].vx-liq[i].vx, liq[ind].vy-liq[i].vy, liq[ind].x-liq[i].x, liq[ind].y-liq[i].y)/dist(liq[ind], liq[i]));
-        }
+        val+=(ppai->pparticle.m*liq[ind].ro*ppai->dk/liq[i]*scalar(liq[ind].vx-ppai->pparticle.vx, liq[ind].vy-ppai->pparticle.vy, liq[ind].x-ppai->pparticle.x, liq[ind].y-ppai->pparticle.y)/dist(liq[ind], ppai->pparticle));
     }
     return -1*val;
 }
-double Liquid::dE(unsigned int ind)
+double Liquid::derE(unsigned int ind) //Speed - O(1)
 {
     double val=0;
-    for (unsigned int i=0; i<liq.size(); i++)
+    for (vector <ppair>::iterator ppai=DK[ind].begin(); ppai!=DK[ind].end(); ++ppai)
     {
-        if (ind!=i)
-        {
-            val+=(liq[i].m*(liq[i].p+liq[ind].p)*DK[ind][i]/2/liq[i].ro/liq[ind].ro*scalar(liq[ind].vx-liq[i].vx, liq[ind].vy-liq[i].vy, liq[ind].x-liq[i].x, liq[ind].y-liq[i].y)/dist(liq[ind], liq[i]));
-        }
+        val+=(ppai->pparticle.m*(ppai->pparticle.p+liq[ind].p)*ppai->dk/2/ppai->pparticle.ro/liq[ind].ro*scalar(liq[ind].vx-ppai->pparticle.vx, liq[ind].vy-ppai->pparticle.vy, liq[ind].x-ppai->pparticle.x, liq[ind].y-ppai->pparticle.y)/dist(liq[ind], ppai->pparticle));
     }
     return -1*val;
 }
-double Liquid::dVx(unsigned int ind)
+double Liquid::derVx(unsigned int ind) //Speed - O(1)
 {
     double val=0;
-    for (unsigned int i=0; i<liq.size(); i++)
+    for (vector <ppair>::iterator ppai=DK[ind].begin(); ppai!=DK[ind].end(); ++ppai)
+    {
+        val+=(ppai->pparticle.m*(ppai->pparticle.p+liq[ind].p)*ppai->dk/ppai->pparticle.ro/liq[ind].ro*(liq[ind].x-ppai->pparticle.x)/dist(liq[ind], ppai->pparticle));
+    }
+    return val;
+}
+double Liquid::derVy(unsigned int ind) //Speed - O(1)
+{
+    double val=0;
+    for (vector <ppair>::iterator ppai=DK[ind].begin(); ppai!=DK[ind].end(); ++ppai)
     {
         if (ind!=i)
         {
-            val+=(liq[i].m*(liq[i].p+liq[ind].p)*DK[ind][i]/liq[i].ro/liq[ind].ro*(liq[ind].x-liq[i].x)/dist(liq[ind], liq[i]));
+            val+=(ppai->pparticle.m*(ppai->pparticle.p+liq[ind].p)*ppai->dk/ppai->pparticle.ro/liq[ind].ro*(liq[ind].y-ppai->pparticle.y)/dist(liq[ind], ppai->pparticle));
         }
     }
     return val;
 }
-double Liquid::dVy(unsigned int ind)
+double Liquid::press(unsigned int ind) //Speed - O(1)
 {
-    double val=0;
-    for (unsigned int i=0; i<liq.size(); i++)
-    {
-        if (ind!=i)
-        {
-            val+=(liq[i].m*(liq[i].p+liq[ind].p)*DK[ind][i]/liq[i].ro/liq[ind].ro*(liq[ind].y-liq[i].y)/dist(liq[ind], liq[i]));
-        }
-    }
-    return val;
+    return B*(std::pow(liq[ind].ro/liq[ind].ro0, 7)-1);
 }
-double ro(vector <particle> liq, unsigned int ind, double h) //Speed - O(n)
+double Particles::ro(vector <particle> liq, unsigned int ind, double h) //Speed - O(n)
 {
     double val=0;
     for (unsigned int i=0; i<liq.size(); i++)
     {
-        val+=(liq[i].m*ker(liq[ind],liq[i], h));
+        val+=(liq[i].m*Ker(liq[ind],liq[i], h));
     }
     return val;
 }

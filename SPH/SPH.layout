@@ -2,24 +2,44 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Release" />
-	<File name="SPH library\Classes&amp;Structures\Liquid.hpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="SPH library\Classes&amp;Structures\Liquid.hpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="643" topLine="0" />
+			<Cursor1 position="531" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="SPH library\Visualizer\Visualizer.cpp" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="SPH library\Constructor\Particles_Constructor.cpp" open="1" top="1" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2102" topLine="30" />
+			<Cursor1 position="146" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="SPH library\Visualizer\Environment Parameters.cpp" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="SPH library\Classes&amp;Structures\particle.cpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="270" topLine="0" />
+			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="SPH library\Solver\Additional functions\distancefunc.cpp" open="1" top="1" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="SPH library\Classes&amp;Structures\Particles.hpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="122" topLine="0" />
+			<Cursor1 position="465" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="SPH library\Visualizer\Visualizer.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="81" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="SPH library\Solver\Additional functions\distancefunc.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="37" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="SPH library\Constructor\Liquid_Constructor.cpp" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="280" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="SPH library\Constructor\Additional functions\randomizer.cpp" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="116" topLine="0" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

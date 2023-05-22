@@ -1,21 +1,25 @@
 #pragma once
 #include "Particles.hpp"
 #include "ppair.cpp"
-class Liquid
+class Liquid: public Particles
 {
 private:
-    vector <particle> liq;
-    vector <vector<ppair>> DK;
-    double h;
+    vector <particle> liq; //Vector of particles
+    vector <vector<ppair>> DK; //Table of derivatives of the kernel function for each pair of particles in the distance range (0; h)
+    double alpha; //Pulse reduction coefficient after reflection from the walls and bottom
+    double k; //Pressure coefficient
+    double g; //Acceleration of free fall
+    double dt; //Time change
 public:
-    Liquid (vector <Particles> P);
-    double Ker (particle p1, particle p2, double h); //Kernel function
+    Liquid (vector <Particles>& P, double alpha, double k, double g, double dt);
     double DerKer (particle p1, particle p2, double h); //Derivative of Kernel function
     void Solve(); //Computing of movement
     void Starting(); //Computing of some initial values
     void Visualize(); //Visualizer
-    double dro(unsigned int ind);
-    double dE(unsigned int ind);
-    double dVx(unsigned int ind);
-    double dVy(unsigned int ind);
+    double derRo(unsigned int ind); //Density derivative
+    double derE(unsigned int ind); //Derivative of specific kinetic energy
+    double derVx(unsigned int ind); //Derivatives of velocity projections on the axises
+    double derVy(unsigned int ind);
+    double press(unsigned int ind); //Computing pressure
+    void reflector(unsigned int ind); //Reflects particles from the walls and bottom
 };
