@@ -1,4 +1,5 @@
-#include "SPH library/allincluded.hpp"
+#include "SPH crutched library/The Great Crutch.hpp"
+
 int main()
 {
     Particles p1("blue", 1, 1, 1, 3150, 10);

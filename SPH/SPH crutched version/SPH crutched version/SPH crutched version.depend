@@ -1,5 +1,11 @@
 # depslib dependency file v1.0
-1683057703 source:c:\users\andra\desktop\Информатика\project\sph\sph\sph\start.cpp
+1684826091 source:c:\users\andra\desktop\Информатика\project\sph\sph\sph crutched version\sph crutched version\sph crutched library\the great crutch.cpp
+	<iostream>
+	<vector>
+	<stdlib.h>
+	<time.h>
+	<cmath>
+	<iterator>
 	<SFML/Graphics.hpp>
 
 1525812018 c:\users\andra\desktop\Информатика\sfml\sfml-2.5.1\include\sfml\graphics.hpp
@@ -411,177 +417,24 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1684826231 source:c:\users\andra\desktop\Информатика\project\sph\sph\sph\kelvin-helmholtz instability.cpp
-	"SPH library/allincluded.hpp"
+1684826952 source:c:\users\andra\desktop\Информатика\project\sph\sph\sph crutched version\sph crutched version\sph.cpp
+	"SPH crutched library/The Great Crutch.hpp"
 
-1683099253 source:c:\users\andra\desktop\Информатика\project\sph\sph\sph\rayleigh-taylor instability.cpp
-
-1684821693 source:c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\classes&structures\particle.cpp
-
-1684821838 source:c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\constructor\additional functions\randomizer.cpp
-	<stdlib.h>
-	<time.h>
-	"randomizer.hpp"
-
-1684821694 source:c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\classes&structures\ppair.cpp
-
-1684419414 c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\classes&structures\particle.cpp
+1684826091 c:\users\andra\desktop\Информатика\project\sph\sph\sph crutched version\sph crutched version\sph crutched library\the great crutch.cpp
 	<iostream>
-
-1684822521 source:c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\solver\additional functions\scalar.cpp
-	"scalar.hpp"
-
-1684822409 source:c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\solver\additional functions\distancefunc.cpp
-	"distancefunc.hpp"
-	<cmath>
-
-1684822058 source:c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\visualizer\environment_parameters.cpp
-
-1684823199 source:c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\solver\additional functions\reflector.cpp
-	"../../Classes&Structures/Liquid.hpp"
-	"../../Visualizer/Environment_Parameters.hpp"
-
-1684823030 c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\classes&structures\liquid.hpp
-	"Particles.hpp"
-	"ppair.hpp"
-
-1684821703 c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\classes&structures\particles.hpp
-	"particle.hpp"
 	<vector>
-
-1684785381 c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\classes&structures\ppair.cpp
-	"Particles.hpp"
-
-1684688454 c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\visualizer\environment_parameters.cpp
-
-1684821735 source:c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\classes&structures\additional functions\getparticles.cpp
-	"../Particles.hpp"
-
-1684823219 source:c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\solver\kerfunc.cpp
-	"Additional functions/distancefunc.hpp"
-	"../Classes&Structures/Liquid.hpp"
-	"Ker.hpp"
-	<cmath>
-
-1684785532 c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\solver\additional functions\distancefunc.cpp
-	"../../Classes&Structures/Liquid.hpp"
-	<cmath>
-
-1684822741 source:c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\solver\liquid.cpp
-	"../Classes&Structures/Liquid.hpp"
-
-1684785540 c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\solver\kerfunc.cpp
-	<cmath>
-	"Additional functions/distancefunc.cpp"
-
-1684822727 source:c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\solver\solver.cpp
-	"../Classes&Structures/Liquid.hpp"
-
-1684785799 c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\solver\additional functions\reflector.cpp
-	"../../Constructor/Liquid_Constructor.cpp"
-
-1684785574 c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\solver\sphfunc.cpp
-	"Liquid.cpp"
-	"Additional functions/scalar.cpp"
-	<cmath>
-	<iterator>
-
-1684785561 c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\solver\liquid.cpp
-	"kerfunc.cpp"
-
-1684779941 c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\solver\additional functions\scalar.cpp
-
-1684823312 source:c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\solver\sphfunc.cpp
-	"../Classes&Structures/Liquid.hpp"
-	"Additional functions/scalar.hpp"
-	"Ro.hpp"
-	"Ker.hpp"
-	"Additional functions/distancefunc.hpp"
-	<iterator>
-	<cmath>
-
-1684822694 source:c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\solver\starting.cpp
-	"../Classes&Structures/Liquid.hpp"
-	"Ro.hpp"
-
-1684821796 source:c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\constructor\particles_constructor.cpp
-	"Additional functions/randomizer.hpp"
-	"../Visualizer/Environment_Parameters.hpp"
-	"../Solver/Ro.hpp"
-	"../Classes&Structures/Particles.hpp"
-	<cmath>
-
-1684687513 c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\constructor\additional functions\randomizer.cpp
 	<stdlib.h>
 	<time.h>
-
-1684822593 source:c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\constructor\liquid_constructor.cpp
-	"../Classes&Structures/Liquid.hpp"
-
-1684785418 c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\classes&structures\additional functions\getparticles.cpp
-	"../ppair.cpp"
-
-1684822928 source:c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\allincluded.cpp
-	"Classes&Structures/Liquid.hpp"
-
-1684785613 c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\constructor\particles_constructor.cpp
-	"Additional functions/randomizer.cpp"
-	"../Visualizer/Environment_Parameters.cpp"
-	"../Solver/SPHfunc.cpp"
 	<cmath>
-
-1684785686 c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\constructor\liquid_constructor.cpp
 	<iterator>
-	"Particles_Constructor.cpp"
-
-1684785866 c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\visualizer\visualizer.cpp
-	"../Solver/Solver.cpp"
-
-1684785855 c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\solver\solver.cpp
-	"Starting.cpp"
-
-1684785907 c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\solver\starting.cpp
-	"Additional functions/reflector.cpp"
-
-1684823335 source:c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\visualizer\visualizer.cpp
 	<SFML/Graphics.hpp>
-	"../Classes&Structures/Liquid.hpp"
-	"Environment_Parameters.hpp"
 
-1684822928 c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\allincluded.cpp
-	"Classes&Structures/Liquid.hpp"
-
-1684821640 c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\classes&structures\particle.hpp
+1684826091 c:\users\andra\desktop\Информатика\project\sph\sph\sph crutched version\sph crutched version\sph crutched library\the great crutch.hpp
 	<iostream>
-
-1684821684 c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\classes&structures\ppair.hpp
-	"particle.hpp"
-
-1684821941 c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\constructor\additional functions\randomizer.hpp
-
-1684822436 c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\solver\additional functions\distancefunc.hpp
-	"../../Classes&Structures/particle.hpp"
-
-1684822505 c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\solver\additional functions\scalar.hpp
-
-1684823150 c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\solver\ro.hpp
-	"../Classes&Structures/particle.hpp"
 	<vector>
-
-1684822054 c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\visualizer\environment_parameters.hpp
-
-1684822315 c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\solver\ker.hpp
-	"../Classes&Structures/particle.hpp"
-
-1684824224 c:\users\andra\desktop\Информатика\project\sph\sph\sph\sph library\allincluded.hpp
-	"Classes&Structures/Liquid.hpp"
-	"Classes&Structures/Particles.hpp"
-	"Classes&Structures/particle.hpp"
-	"Classes&Structures/ppair.hpp"
-	"Constructor/Additional functions/randomizer.hpp"
-	"Solver/Additional functions/distancefunc.hpp"
-	"Solver/Additional functions/scalar.hpp"
-	"Solver/Ker.hpp"
-	"Solver/Ro.hpp"
-	"Visualizer/Environment_Parameters.hpp"
+	<stdlib.h>
+	<time.h>
+	<cmath>
+	<iterator>
+	<SFML/Graphics.hpp>
 

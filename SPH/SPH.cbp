@@ -32,9 +32,7 @@
 		<Unit filename="SPH library/Classes&amp;Structures/Additional functions/getParticles.cpp" />
 		<Unit filename="SPH library/Classes&amp;Structures/Liquid.hpp" />
 		<Unit filename="SPH library/Classes&amp;Structures/Particles.hpp" />
-		<Unit filename="SPH library/Classes&amp;Structures/particle.cpp" />
 		<Unit filename="SPH library/Classes&amp;Structures/particle.hpp" />
-		<Unit filename="SPH library/Classes&amp;Structures/ppair.cpp" />
 		<Unit filename="SPH library/Classes&amp;Structures/ppair.hpp" />
 		<Unit filename="SPH library/Constructor/Additional functions/randomizer.cpp" />
 		<Unit filename="SPH library/Constructor/Additional functions/randomizer.hpp" />
@@ -52,10 +50,9 @@
 		<Unit filename="SPH library/Solver/Solver.cpp" />
 		<Unit filename="SPH library/Solver/Starting.cpp" />
 		<Unit filename="SPH library/Solver/kerfunc.cpp" />
-		<Unit filename="SPH library/Visualizer/Environment_Parameters.cpp" />
 		<Unit filename="SPH library/Visualizer/Environment_Parameters.hpp" />
 		<Unit filename="SPH library/Visualizer/Visualizer.cpp" />
-		<Unit filename="SPH library/allincluded.cpp" />
+		<Unit filename="SPH library/allincluded.hpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
