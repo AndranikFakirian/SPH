@@ -1,5 +1,5 @@
 #pragma once
-#include "particle.cpp"
+#include "particle.hpp"
 #include <vector>
 class Particles
 {

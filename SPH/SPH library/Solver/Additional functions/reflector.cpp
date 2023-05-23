@@ -1,6 +1,6 @@
 #pragma once
 #include "../../Classes&Structures/Liquid.hpp"
-#include "../../Visualizer/Environment_Parameters.cpp"
+#include "../../Visualizer/Environment_Parameters.hpp"
 void Liquid::reflector(unsigned int ind)
 {
     double xmin=(E_WX-E_length)/2+E_rad;

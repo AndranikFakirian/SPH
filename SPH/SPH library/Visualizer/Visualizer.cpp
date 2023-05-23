@@ -1,8 +1,7 @@
 #pragma once
-#include "Environment_Parameters.cpp"
-#include <iterator>
-#include "../Solver/Solver.cpp"
-#include "../Solver/Starting.cpp"
+#include <SFML/Graphics.hpp>
+#include "../Classes&Structures/Liquid.hpp"
+#include "Environment_Parameters.hpp"
 
 void Liquid::Visualize()
 {

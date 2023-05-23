@@ -1,6 +1,5 @@
 #pragma once
 #include "../Classes&Structures/Liquid.hpp"
-#include "kerfunc.cpp"
 
 void Liquid::fillDK() //Speed - O(n^2), memory - O(n)
 {

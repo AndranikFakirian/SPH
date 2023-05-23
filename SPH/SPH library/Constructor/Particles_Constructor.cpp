@@ -1,8 +1,8 @@
 #pragma once
-#include "Additional functions/randomizer.cpp"
+#include "Additional functions/randomizer.hpp"
+#include "../Visualizer/Environment_Parameters.hpp"
+#include "../Solver/Ro.hpp"
 #include "../Classes&Structures/Particles.hpp"
-#include "../Visualizer/Environment_Parameters.cpp"
-#include "../Solver/SPHfunc.cpp"
 #include <cmath>
 Particles::Particles(std::string c, double vx, double vy, double m, long int Num, double h) //Speed - O(N), memory - O(N)
 {

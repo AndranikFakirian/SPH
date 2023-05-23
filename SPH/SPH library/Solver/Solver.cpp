@@ -1,7 +1,5 @@
 #pragma once
-#include "Additional functions/reflector.cpp"
-#include "SPHfunc.cpp"
-#include "Liquid.cpp"
+#include "../Classes&Structures/Liquid.hpp"
 
 void Liquid::Solve() //Speed - O(N)
 {

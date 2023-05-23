@@ -1,5 +1,5 @@
 #pragma once
-#include "SPH library/allincluded.cpp"
+#include "SPH library/Classes&Structures/Liquid.hpp"
 
 int main()
 {

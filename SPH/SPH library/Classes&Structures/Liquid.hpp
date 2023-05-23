@@ -1,7 +1,6 @@
 #pragma once
 #include "Particles.hpp"
-#include "ppair.cpp"
-#include <SFML/Graphics.hpp>
+#include "ppair.hpp"
 class Liquid
 {
 private:
@@ -12,7 +11,6 @@ private:
     double k; //Pressure coefficient
     double g; //Acceleration of free fall
     double dt; //Time change
-    sf::ContextSettings settings;
 public:
     Liquid (std::vector <Particles>& P, double alpha, double k, double g, double dt);
     double DerKer (particle p1, particle p2, double h); //Derivative of Kernel function

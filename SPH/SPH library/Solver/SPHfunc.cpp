@@ -1,9 +1,11 @@
 #pragma once
 #include "../Classes&Structures/Liquid.hpp"
-#include "Liquid.cpp"
-#include "Additional functions/scalar.cpp"
-#include <cmath>
+#include "Additional functions/scalar.hpp"
+#include "Ro.hpp"
+#include "Ker.hpp"
+#include "Additional functions/distancefunc.hpp"
 #include <iterator>
+#include <cmath>
 
 double Liquid::derRo(unsigned int ind) //Speed - O(1)
 {

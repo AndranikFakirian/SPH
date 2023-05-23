@@ -1,5 +1,6 @@
 #pragma once
-#include "SPHfunc.cpp"
+#include "../Classes&Structures/Liquid.hpp"
+#include "Ro.hpp"
 
 void Liquid::Starting() //Speed - O(N)
 {

@@ -33,19 +33,27 @@
 		<Unit filename="SPH library/Classes&amp;Structures/Liquid.hpp" />
 		<Unit filename="SPH library/Classes&amp;Structures/Particles.hpp" />
 		<Unit filename="SPH library/Classes&amp;Structures/particle.cpp" />
+		<Unit filename="SPH library/Classes&amp;Structures/particle.hpp" />
 		<Unit filename="SPH library/Classes&amp;Structures/ppair.cpp" />
+		<Unit filename="SPH library/Classes&amp;Structures/ppair.hpp" />
 		<Unit filename="SPH library/Constructor/Additional functions/randomizer.cpp" />
+		<Unit filename="SPH library/Constructor/Additional functions/randomizer.hpp" />
 		<Unit filename="SPH library/Constructor/Liquid_Constructor.cpp" />
 		<Unit filename="SPH library/Constructor/Particles_Constructor.cpp" />
 		<Unit filename="SPH library/Solver/Additional functions/distancefunc.cpp" />
+		<Unit filename="SPH library/Solver/Additional functions/distancefunc.hpp" />
 		<Unit filename="SPH library/Solver/Additional functions/reflector.cpp" />
 		<Unit filename="SPH library/Solver/Additional functions/scalar.cpp" />
+		<Unit filename="SPH library/Solver/Additional functions/scalar.hpp" />
+		<Unit filename="SPH library/Solver/Ker.hpp" />
 		<Unit filename="SPH library/Solver/Liquid.cpp" />
+		<Unit filename="SPH library/Solver/Ro.hpp" />
 		<Unit filename="SPH library/Solver/SPHfunc.cpp" />
 		<Unit filename="SPH library/Solver/Solver.cpp" />
 		<Unit filename="SPH library/Solver/Starting.cpp" />
 		<Unit filename="SPH library/Solver/kerfunc.cpp" />
 		<Unit filename="SPH library/Visualizer/Environment_Parameters.cpp" />
+		<Unit filename="SPH library/Visualizer/Environment_Parameters.hpp" />
 		<Unit filename="SPH library/Visualizer/Visualizer.cpp" />
 		<Unit filename="SPH library/allincluded.cpp" />
 		<Extensions>

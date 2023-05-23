@@ -1,6 +1,7 @@
 #pragma once
 #include <stdlib.h>
 #include <time.h>
+#include "randomizer.hpp"
 
 int randomize(int max, int min) //Returns value [min; max]^Z
 {

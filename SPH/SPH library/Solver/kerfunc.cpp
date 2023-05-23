@@ -1,8 +1,9 @@
 #pragma once
-#include <cmath>
+#include "Additional functions/distancefunc.hpp"
 #include "../Classes&Structures/Liquid.hpp"
-#include "Additional functions/distancefunc.cpp"
-double Ker(particle p1, particle p2, double h)  //Kernel function
+#include "Ker.hpp"
+#include <cmath>
+double Ker(particle p1, particle p2, double h)  //Kernel function //Speed - O(1)
 {
     double r=dist(p1, p2);
     double e=r/h;
@@ -20,7 +21,7 @@ double Ker(particle p1, particle p2, double h)  //Kernel function
         return (1-1.5*std::pow(e, 2)+0.75*std::pow(e, 3))/k;
     }
 }
-double Liquid::DerKer(particle p1, particle p2, double h)
+double Liquid::DerKer(particle p1, particle p2, double h) //Speed - O(1)
 {
     double r=dist(p1, p2);
     double e=r/h;

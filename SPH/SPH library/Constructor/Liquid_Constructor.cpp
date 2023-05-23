@@ -1,8 +1,5 @@
 #pragma once
 #include "../Classes&Structures/Liquid.hpp"
-#include <iterator>
-#include "../Visualizer/Environment_Parameters.cpp"
-#include "../Classes&Structures/Additional functions/getParticles.cpp"
 
 Liquid::Liquid (std::vector <Particles>& P, double alpha, double k, double g, double dt): alpha(alpha), k(k), g(g), dt(dt) //Speed - O(N), memory - O(N)
 {

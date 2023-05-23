@@ -1,5 +1,5 @@
 #pragma once
-#include "../../Classes&Structures/particle.cpp"
+#include "distancefunc.hpp"
 #include <cmath>
 double dist(particle p1, particle p2)
 {
