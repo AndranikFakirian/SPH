@@ -1,7 +1,7 @@
 #pragma once
 #include "../../Classes&Structures/Liquid.hpp"
 #include "../../Visualizer/Environment_Parameters.hpp"
-void Liquid::reflector(unsigned int ind)
+void Liquid::reflector(unsigned int ind) //Speed - O(1)
 {
     double xmin=(E_WX-E_length)/2+E_rad;
     double xmax=(E_WX+E_length)/2-E_rad;

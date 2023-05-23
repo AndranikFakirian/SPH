@@ -3,7 +3,7 @@
 #include "../Classes&Structures/Liquid.hpp"
 #include "Environment_Parameters.hpp"
 
-void Liquid::Visualize()
+void Liquid::Visualize() //Speed - O(N^2)
 {
     sf::ContextSettings settings;
     settings.antialiasingLevel = 8;

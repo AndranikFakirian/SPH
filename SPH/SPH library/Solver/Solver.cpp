@@ -1,7 +1,7 @@
 #pragma once
 #include "../Classes&Structures/Liquid.hpp"
 
-void Liquid::Solve() //Speed - O(N)
+void Liquid::Solve() //Speed - O(N^2)
 {
     fillDK();
     for (unsigned i=0; i<liq.size(); i++)
